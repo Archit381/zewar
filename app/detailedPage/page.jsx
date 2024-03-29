@@ -183,4 +183,4 @@ const Page = ({ searchParams }) => {
   );
 };
 
-export default page;
+export default Page;
