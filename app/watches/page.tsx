@@ -154,7 +154,7 @@ const Page = () => {
 
         <div className="mt-5 flex flex-wrap gap-1 bg-[#f0eee4]">
           {data.map((item, index) => (
-            <Link href={`/detailedPage?id=${item.id}`}>
+            <Link key={item.id} href={`/detailedPage?id=${item.id}`}>
               <div
                 key={index}
                 className="p-1"

@@ -138,7 +138,7 @@ const Page = () => {
                 Bold, eye-catching, and endlessly versatile, our crystal
                 earrings will elevate any look. From classic gold-tone plated
                 and silver-tone plated pieces to statement and colorful designs,
-                they're ready to style your way for any occasion.
+                they&apos;re ready to style your way for any occasion.
               </p>
             </div>
           </div>
@@ -154,7 +154,7 @@ const Page = () => {
 
         <div className="mt-5 flex flex-wrap gap-1 bg-[#f0eee4]">
           {data.map((item, index) => (
-            <Link href={`/detailedPage?id=${item.id}`}>
+            <Link key={item.id} href={`/detailedPage?id=${item.id}`}>
               <div
                 key={index}
                 className="p-1"

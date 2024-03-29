@@ -137,10 +137,10 @@ const Page = () => {
               </p>
 
               <p style={{ marginTop: 20, width: 600, fontSize: 12 }}>
-                Looking for wear-forever fashion jewelry? You've come to the
-                right place. Expect necklaces, earrings, rings, and everything
-                in-between with crystal designs that make a unique statement,
-                day or night.
+                Looking for wear-forever fashion jewelry? You&apos;ve come to
+                the right place. Expect necklaces, earrings, rings, and
+                everything in-between with crystal designs that make a unique
+                statement, day or night.
               </p>
             </div>
           </div>
@@ -149,14 +149,14 @@ const Page = () => {
 
       <div className="container mx-auto max-w-7xl px-6 flex-grow mt-10 bg-[#f0eee4]">
         <div className=" bg-white justify-center items-center flex p-3">
-        Filter Options
+          Filter Options
         </div>
 
         <div className="mt-5 ml-5">{data?.length} Results</div>
 
         <div className="mt-5 flex flex-wrap gap-1 bg-[#f0eee4]">
           {data.map((item, index) => (
-            <Link href={`/detailedPage?id=${item.id}`}>
+            <Link key={item.id} href={`/detailedPage?id=${item.id}`}>
               <div
                 key={index}
                 className="p-1"

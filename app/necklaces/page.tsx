@@ -16,7 +16,7 @@ interface ZewarItem {
   image: string;
 }
 
-const page = () => {
+const Page = () => {
   const [data, setData] = useState<ZewarItem[]>([]);
 
   useEffect(() => {
@@ -137,7 +137,7 @@ const page = () => {
               <p style={{ marginTop: 20, width: 600, fontSize: 12 }}>
                 Find your new everyday favorite with our collection of necklaces
                 for men and women. From delicate and fine chains to
-                crystal-studded designs, there's a design to suit every outfit
+                crystal-studded designs, there&apos;s a design to suit every outfit
                 and personality.
               </p>
             </div>
@@ -154,7 +154,7 @@ const page = () => {
 
         <div className="mt-5 flex flex-wrap gap-1 bg-[#f0eee4]">
           {data.map((item, index) => (
-            <Link href={`/detailedPage?id=${item.id}`}>
+            <Link key={item.id} href={`/detailedPage?id=${item.id}`}>
             <div
               key={index}
               className="p-1"
@@ -196,4 +196,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
