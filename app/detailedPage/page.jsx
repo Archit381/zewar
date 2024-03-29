@@ -8,7 +8,7 @@ import Image from "next/image";
 import { MdOutlineCurrencyRupee } from "react-icons/md";
 import { Button } from "@nextui-org/button";
 
-const page = ({ searchParams }) => {
+const Page = ({ searchParams }) => {
   const id = searchParams.id;
   const [data, setData] = useState([]);
   const [size, setSize] = useState("s");

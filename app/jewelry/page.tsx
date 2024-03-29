@@ -16,7 +16,7 @@ interface ZewarItem {
   image: string;
 }
 
-const page = () => {
+const Page = () => {
   const [data, setData] = useState<ZewarItem[]>([]);
 
   useEffect(() => {
@@ -149,7 +149,7 @@ const page = () => {
 
       <div className="container mx-auto max-w-7xl px-6 flex-grow mt-10 bg-[#f0eee4]">
         <div className=" bg-white justify-center items-center flex p-3">
-          lmfao
+        Filter Options
         </div>
 
         <div className="mt-5 ml-5">{data?.length} Results</div>
@@ -198,4 +198,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

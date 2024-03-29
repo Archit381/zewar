@@ -14,7 +14,7 @@ export default function Home() {
   const router =useRouter();
 
   const handleButtonClick = () => {
-    router.push('http://localhost:3001/');
+    router.push('https://virtual-try-on-brown.vercel.app/');
   };
 
   return (
